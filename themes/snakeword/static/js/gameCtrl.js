@@ -5,6 +5,8 @@ var findwords = [];
 var findwordids = [];
 var opponentfindwords = [];
 //
+
+//
 function shownotify (text,Noteclass){
 var notify =document.getElementById(Noteclass)
 notify.style.display ="block" ;
@@ -116,7 +118,6 @@ document.getElementById('word').options[0].text = word;
 document.getElementById('word').options[0].selected = true
 
 
-nearCheck(id,ids);
 
     if (isDict(word)>0 
       && word.length>=3
@@ -189,7 +190,7 @@ function clear() {
     opt.value = "";
     opt.innerHTML = "";
     opt.selected= true;
-    Select.appendChild(opt);
+    //Select.appendChild(opt);
     //
 }
 

@@ -108,38 +108,13 @@ var timeout0 = setTimeout(clear, 2500)
 function collectWord(Id,id){
 
 
-    clearTimeout(timeout0)
-    ids.push(id);
+    //clearTimeout(timeout0)
+    //ids.push(id);
     word= word+Id
 
-document.getElementById('word').options[0].text = word;
-document.getElementById('word').options[0].selected = true
+//document.getElementById('word').options[0].text = word;
+//document.getElementById('word').options[0].selected = true
 
-
-nearCheck(id,ids);
-
-    if (isDict(word)>0 
-      && word.length>=3
-      && nearCheck(id,ids))
-      {
-  //    getTranslate('en','ru',word);
-
-      if(isFinded(word)>=0 && findwords.indexOf(word) ){
-          findwords.splice(findwords.indexOf(word),1);
-          findwords.push(word);
-          timeout0=setTimeout(clear, 2500);
-      } 
-          //stop dubles
-      if(isFinded(word)<0 ){
-        moreletter();
-        findwordids.push(ids);
-        timeout0 = setTimeout(clear, 2500);
-//        s.send(JSON.stringify({"field":letters.join(''), "word": ids,"user": getCookie("username")}));
-        ids=[] 
-          } 
-      listfindedwords(word,isFinded(word)); 
-      }
-    else timeout0=setTimeout(clear, 2500);
 }
 function listfindedwords(word,findindex){
 
@@ -189,11 +164,11 @@ function clear() {
     opt.value = "";
     opt.innerHTML = "";
     opt.selected= true;
-    Select.appendChild(opt);
+    //Select.appendChild(opt);
     //
 }
 
-document.getElementById('clear').onclick = function(){clear()};
+//document.getElementById('clear').onclick = function(){clear()};
 
 
 function SaveGame_old(){

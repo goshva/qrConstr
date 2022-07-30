@@ -33,7 +33,7 @@ function getRandomInt(min, max)
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 	}
 
-function generator(){
+function generator(edge){
   for (var i= 0; i< (edge*edge); i++){
 	var letter = getRandomInt(0,Allletters);
 	var Alphabetcount = 0
@@ -57,9 +57,12 @@ function genArea(){
         divbtn.LetterCount=L;
         divbtn.onclick= function (){  collectWord(this.Letter,this.LetterCount); this.className += " activeCell";}
 	var t = document.createTextNode(letters[L]);       
-	divbtn.appendChild(t);                       
+	divbtn.appendChild(t);
+	var br = document.createElement('br');
+	gameplace.appendChild(br);                         
 	gameplace.appendChild(divbtn);               
      }
 }
+
 
 //generator();
