@@ -53,29 +53,7 @@ function checkCookie(key) {
        }
     }
 }
-//checkCookie("username")
-///  
-function startmultiplayer(){
-		var s = new WebSocket("wss://snakeword.ru/ws/:9898");
-		s.onopen = function(e) {
-		  console.info("ws opened");
-		  s.send(JSON.stringify({"field":letters.join(''), "word": [0],"user": getCookie("username")}));
-		}
-		s.onclose = function(e) { console.info("ws closed"); }
-		s.onmessage = function(e) { 
-		  var message = JSON.parse(e.data)
-		  if (message.field ==  letters.join('') && message.user != getCookie("username")){
-		   BorderfromFindWord(message.word);
-		   shownotify (message.user+" +"+message.word.length)
-        }
-}
-}
-function BorderfromFindWord(arr){
-  for (var i = 0; i < arr.length; i++) {
-    console.log(arr[i])
-    document.getElementById("C"+arr[i]).style.border = "thin solid #1f8dd6";
-  }
-}
+
 
 function isFinded(word) { return findwords.indexOf(word);} 	
 
