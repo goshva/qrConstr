@@ -10,9 +10,8 @@
     text-align: center;
     text-transform: uppercase;
     float: left;
-    width: 29px;
+    width: 28px;
     height: 28px;
-    padding: 5px 1px 0px 1px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 19px;
@@ -22,9 +21,8 @@
 .endCell{ 
    text-align: center;
    text-transform: uppercase;
-   width: 29px;
+   width: 28px;
    height: 28px;
-   padding: 5px 1px 0px 1px;
    border: 1px solid #ccc;
    border-radius: 4px;
    font-size: 19px;
