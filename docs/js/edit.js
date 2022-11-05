@@ -47,7 +47,7 @@ function Eventer(edge){
 	childern.forEach(div => {
 		div.addEventListener("click", function(){
 			letters[this.dataset.number]==0 ? letters[this.dataset.number] = 1 : letters[this.dataset.number] = 0
-			// for debug : result.innerHTML = JSON.stringify(pretty(letters,edge))
+			result.innerHTML = JSON.stringify(pretty(letters,edge))
 			switch(this.className){
 				case 'cell': this.className = 'cell activeCell'; break;
 				case 'endCell': this.className = 'endCell activeCell';break;
