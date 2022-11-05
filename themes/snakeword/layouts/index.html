@@ -1,25 +1,27 @@
-        {{ define "main" }}
-<div id="main">
+{{ define "main" }}
+    <div id="main">
         <div class="header">
-            <div class="pure-form"     style="display: flex; justify-content: center">
-		    <span class="pure-button pure-button-active" id="points" title="{{ .Site.Params.Points}}">...
-                </span>
+            <div class="pure-form" style="display: flex; justify-content: center">
                 <select id="qrEdge" class="pure-input-3-5">
-                        {{ range $num := (seq 5 10)  }}
-        			<option>{{ .}}</option>
-                        {{ end }}
+                    {{ range $num := (seq 5 10) }}
+                        <option>{{ .}}</option>
+                    {{ end }}
                 </select>
 
-		<span class="pure-button pure-button-active" id="clear" title="{{ .Site.Params.Cut}}">&#9003;✗</span>
+                <span class="pure-button pure-button-active" id="clear" title="{{ .Site.Params.Cut}}">{{ .Site.Params.Cut}}</span>
             </div>
         </div>
-        <hr>
         <div class="content">
-            <div id="gameplace" ></div>
-            <hr>
-            <div id="result" style="text-align:center"></div>
+            <div id="gameplace"></div>
+
+            <div id="result"></div>
             <ul class="pure-menu-list" id="gametally"></ul>
-	    <div id="result"></div>
+
         </div>
- </div>      </div>
- {{ end }}
+    </div>
+    <div class="header">
+        <div class="pure-form" style="display: flex; justify-content: center">
+            <span class="pure-button pure-button-active" id="send" title="{{ .Site.Params.Gen}}">{{ .Site.Params.Gen}}</span>
+        </div>
+    </div>
+{{ end }}
