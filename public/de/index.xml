@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Змееслов</title>
-    <link>http://snakeword.ru/de/</link>
-    <description>Recent content on Змееслов</description>
+    <title>QR-Code mit Mosaik</title>
+    <link>https://goshva.github.io/qrConstr/de/</link>
+    <description>Recent content on QR-Code mit Mosaik</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>Everything is mine</copyright><atom:link href="http://snakeword.ru/de/index.xml" rel="self" type="application/rss+xml" />
+    <copyright>Everything is mine</copyright><atom:link href="https://goshva.github.io/qrConstr/de/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

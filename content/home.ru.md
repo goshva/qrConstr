@@ -1,5 +1,5 @@
 ---
-title: "Snakeword"
+title: "qr-код с мозайкой"
 date: 2020-04-17T15:06:40+03:00
 draft: true
 author: "sha.egor"

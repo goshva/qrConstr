@@ -1,19 +1,19 @@
 DefaultContentLanguage = "en"
 copyright = "Everything is mine"
-baseURL = "http://snakeword.ru/"
+baseURL = "https://goshva.github.io/qrConstr/"
 languageCode = "en-us"
-title = "My snakeword game"
+title = "Search fragment in QRcode"
 theme = ["snakeword"]
 
 [Languages]
 [Languages.en]
   Languagename =  "English"
 
-  title = "Snakeword"
+  title = "qr code with mosaic"
   weight = 1
-  author = "Sha. Egor"
+  author = "Yzoz Sha. Egor"
   Description = "Take a word by side by side letters"
-  keywords = "Tesla's Awesome Hugo Site"
+  keywords = "Generator and finder pixel fragment in random QRcode"
   fbAppid = "Tesla's Awesome Hugo Site"
   Fullurl = "Tesla's Awesome Hugo Site"
   Points = "0"
@@ -28,10 +28,10 @@ theme = ["snakeword"]
 
 [Languages.ru]
   Languagename =  "Русский"
-  title = "Змееслов"
+  title = "qr-код с мозайкой"
   weight = 2
-  author = "Егор Ша."
-  Description = "Игра собери слово"
+  author = "Егор Ша. Yzoz"
+  Description = "Найдем фрагмент и предоставим qr код его включающий"
   keywords = "Tesla's Awesome Hugo Site"
   fbAppid = "Tesla's Awesome Hugo Site"
   Fullurl = "Tesla's Awesome Hugo Site"
@@ -45,20 +45,20 @@ theme = ["snakeword"]
   Gen = "Сгенерировать"
 
 [Languages.de]
-  Languagename =  "Немецкий"
-  title = "Змееслов"
+  Languagename =  "Deutsch"
+  title = "QR-Code mit Mosaik"
   weight = 2
   author = "Егор Ша."
-  Description = "Игра собери слово"
+  Description = "Lassen Sie uns ein Fragment finden und einen QR-Code bereitstellen, der es enthält"
   keywords = "Tesla's Awesome Hugo Site"
   fbAppid = "Tesla's Awesome Hugo Site"
   Fullurl = "Tesla's Awesome Hugo Site"
   Points = "0"
   MyRecord = "0"
-  Game_Mode = "Вид игры"
+  Game_Mode = "Spiel Typ"
   Random = "Хаос"
   Setings = "Набор"
-  Save = "Сохранить"
+  Save = "Speichern"
   Cut = "Löschen"
   Gen = "Generieren"
 [taxonomies]
